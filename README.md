@@ -1,6 +1,6 @@
 # Backend Challenge
 
-A backend challege of two services. One service grabs XML vehicle data, parses to JSON and saves to a Mongo database. The second service is a GET endpoint.
+A backend challege of two services. One service grabs XML vehicle data, parses to JSON and saves to a Mongo database. The second service is a GET endpoint to retrive the JSON data.
 
 ## How To Run
 
