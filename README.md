@@ -1,6 +1,6 @@
 # Backend Challenge
 
-Foobar is a Python library for dealing with word pluralization.
+A backend challege of two services. One service grabs XML vehicle data, parses to JSON and saves to a Mongo database. The second service is a GET endpoint.
 
 ## How To Run
 
@@ -10,7 +10,7 @@ First install the dependencies:
 npm install
 ```
 
-To run the backend endpoint in docker which is reachable at localhost:3000/vehicles:
+To run the backend endpoint in docker which is reachable at ```localhost:3000/vehicles```:
 
 ```bash
 docker-compose up -d backend-service
