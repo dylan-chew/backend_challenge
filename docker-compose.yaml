@@ -1,0 +1,25 @@
+version: '3.4'
+services:
+  backend-service:
+    volumes:
+      - ".:/code"
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    command: "npm run start"
+  fetch-job:
+    volumes:
+      - ".:/code"
+    build: .
+    depends_on:
+      - db
+    command: "node cron-fetch-vehicles"
+  db:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "root"
+      MONGO_INITDB_ROOT_PASSWORD: "rootPassXXX"
+    ports:
+      - 27017:27017
